@@ -5,8 +5,6 @@ install:
 	docker-compose up -d
 	composer install
 	symfony serve -d
-	npm install
-	npm run build
 	symfony console d:d:c
 	symfony console d:m:m --no-interaction
 .PHONY: install
